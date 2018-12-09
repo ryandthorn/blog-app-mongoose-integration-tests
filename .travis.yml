@@ -1,4 +1,11 @@
 language: node_js
 node_js: node
 services:
-- mongodb 
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: lPFck5rLNR1jkBBNe0xS5uazN6/WvDUhZ1GQOwA7DrKQji0j6vjed/pV+ooHVdOSp+i4hah9A+Q1J4F6+BmhCCfhvqSHhsAIQOB6nz6HmRzyttBz2p5+IJNgIfQaDFa3kj/hmJFhUhCxqcqXj+xfHN8m/xH8KRgUv4Y6GSo+qNmRj3jSSoBmaCNVyMr8WMhytSBs8o2S8YsPdxR+7MwFB73MpCzkVSG+DfjXAzCeseLg80Qi8YecE6i2YJIt0kE18izFg8+KS4cklNrYN/WMqfHE75SxxbqzeadI0in6phPdXNsjWqexCxYt05Q2g50YWnJqSD3R2bwtnK4wrgfh5DTXSWenIzNZFxYuppAMfc42OsBUCDd6YUMLTxxa9woufd3rNigxiyEOj6tTU+PdtEvx++KMInpQsLfAe014cybu+PCUGivkT5zNUECZ4Nrx3CDKiGLNLnxTGxSY/uraB0GMC8qBkmC2m4Y/ymMdPB+n7SW6/n+GxJAV3mHF5kuyM7wQn2sEhKdRmvVUfrTjGJJmUK4LG5Of0FrXoOxYTB3dbjFlhGjRYPctJjhc9eFGuRZqF+jtQuSUER4TvWQOnRZ074wLIc7kUo/MaHDON5eGEqB2wa7HnyVHaN4ERYidtk2YRmua5Rw/8Y4cvNRB4WunvoAxrRPrtZl1jxSxTMk=
+  app: floating-stream-59117
+  on:
+    repo: ryandthorn/blog-app-mongoose-integration-tests
